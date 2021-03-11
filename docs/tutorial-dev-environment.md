@@ -1,5 +1,5 @@
 ---
-title: How to set up your development environment
+title: Local development
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

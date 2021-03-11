@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
     Introduction: [
+      'intro-home',
       'intro-citizenlab',
       'intro-documentation',
     ],

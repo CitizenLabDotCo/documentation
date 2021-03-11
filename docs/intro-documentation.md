@@ -4,10 +4,10 @@ title: Finding your way
 
 This documentation website follows the conventions laid out by the [divio documentation system](https://documentation.divio.com). 
 
-The system identifies that there isn't one thing called documentation, but there are four. This means that the documentation is structured around 4 different perspectives:
+There isn't one thing called documentation, but there are four. This means that the documentation is structured around 4 different perspectives:
 
 ### Tutorials
-Learn something very concrete to get started
+Learn something very concrete and fast, to get you started
 
 ### Guides
 Learn something more advanced

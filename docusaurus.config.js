@@ -11,15 +11,15 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Development Portal',
+      title: '',
       logo: {
         alt: 'CitizenLab',
         src: 'img/logo.png',
       },
       items: [
         {
-          to: 'docs/intro-citizenlab',
-          activeBasePath: 'docs',
+          to: '/',
+          activeBasePath: '/',
           label: 'Docs',
           position: 'left',
         },
@@ -35,16 +35,20 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Info',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'CitizenLab',
+              to: 'https://www.citizenlab.co',
             },
-            // {
-            //   label: 'Second Doc',
-            //   to: 'docs/doc2/',
-            // },
+            {
+              label: 'Blog',
+              to: 'https://www.citizenlab.co/blog',
+            },
+            {
+              label: 'Development portal',
+              to: '/',
+            },
           ],
         },
         {
@@ -53,10 +57,6 @@ module.exports = {
             {
               label: 'Github discussions',
               href: 'https://github.com/CitizenLabDotCo/citizenlab/discussions',
-            },
-            {
-              label: 'Website',
-              href: 'https://citizenlab.co',
             },
             {
               label: 'Twitter',
@@ -90,6 +90,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/CitizenLabDotCo/documentation/edit/master',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
