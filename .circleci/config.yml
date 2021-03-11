@@ -1,0 +1,35 @@
+version: 2.1
+orbs:
+  aws-cli: circleci/aws-cli@1.4.0
+jobs:
+  build:
+    docker:
+      - image: cimg/node:12
+    working_directory: /site
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-npm-cache-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-npm-cache-
+      - run: npm ci
+      - save_cache:
+          paths:
+            - /root/.npm
+          key: v1-npm-cache-{{ checksum "package.json" }}
+      - run: npm run build
+      - aws-cli/setup
+      - deploy:
+          command: aws s3 sync build/ s3://$S3_BUCKET --delete --acl public-read --exclude "api-docs/*" --exclude "components/*"
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
