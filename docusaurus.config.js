@@ -51,16 +51,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Github discussions',
+              href: 'https://github.com/CitizenLabDotCo/citizenlab/discussions',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Website',
+              href: 'https://citizenlab.co',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/citizenlabco',
             },
           ],
         },
@@ -78,7 +78,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CitizenLab`,
     },
   },
   presets: [

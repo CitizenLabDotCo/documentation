@@ -10,7 +10,6 @@ module.exports = {
       'tutorial-contribute-translations',
     ],
     Guides: [
-      'guide-contribute-bug-fix',
       'guide-upgrading',
       'guide-verification-plugin'
     ],
@@ -21,6 +20,7 @@ module.exports = {
     Background: [
       'background-architecture',
       'background-commercial-features',
+      'background-contributing'
     ],
   },
 };

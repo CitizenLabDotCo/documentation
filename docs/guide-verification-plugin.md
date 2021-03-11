@@ -1,5 +1,5 @@
 ---
-title: Implement a verification method
+title: How to implement a verification plug-in
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

@@ -1,5 +1,22 @@
 ---
-title: Finding your way in the documentation
+title: Finding your way
 ---
 
-This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.example.com/)
+This documentation website follows the conventions laid out by the [divio documentation system](https://documentation.divio.com). 
+
+The system identifies that there isn't one thing called documentation, but there are four. This means that the documentation is structured around 4 different perspectives:
+
+### Tutorials
+Learn something very concrete to get started
+
+### Guides
+Learn something more advanced
+
+### Reference
+
+### Background
+Extra information that elaborates further on certain subjects without an immediate end goal.
+
+:::note
+This documentation website is open-source itself. Did you spot a mistake? Do you want to suggest an improvement? We welcome [contributions](https://github.com/CitizenLabDotCo/documentation)
+:::

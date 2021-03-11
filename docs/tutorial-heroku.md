@@ -1,5 +1,5 @@
 ---
-title: How to deploy to heroku
+title: Deploying to Heroku
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
