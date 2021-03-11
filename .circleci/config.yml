@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/node:12
+      - image: cimg/node:12.21.0
     working_directory: /site
     steps:
       - checkout
