@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Development Portal',
+  tagline: '',
+  url: 'https://developers.citizenlab.co',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -11,21 +11,21 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Development Portal',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'CitizenLab',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/intro-citizenlab',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/CitizenLabDotCo/citizenlab',
           label: 'GitHub',
           position: 'right',
         },
@@ -41,10 +41,10 @@ module.exports = {
               label: 'Style Guide',
               to: 'docs/',
             },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
+            // {
+            //   label: 'Second Doc',
+            //   to: 'docs/doc2/',
+            // },
           ],
         },
         {
@@ -89,7 +89,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/CitizenLabDotCo/documentation/edit/master',
         },
         blog: {
           showReadingTime: true,

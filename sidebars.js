@@ -1,6 +1,26 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Introduction: [
+      'intro-citizenlab',
+      'intro-documentation',
+    ],
+    Tutorials: [
+      'tutorial-heroku',
+      'tutorial-dev-environment',
+      'tutorial-contribute-translations',
+    ],
+    Guides: [
+      'guide-contribute-bug-fix',
+      'guide-upgrading',
+      'guide-verification-plugin'
+    ],
+    Reference: [
+      'reference-api-docs',
+      'reference-component-library',
+    ],
+    Background: [
+      'background-architecture',
+      'background-commercial-features',
+    ],
   },
 };
