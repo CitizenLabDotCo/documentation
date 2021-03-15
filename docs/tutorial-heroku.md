@@ -12,7 +12,7 @@ Before we get started you need an Heroku account and have the Heroku CLI install
 
 Next, click this button to start the setup procedure
 <a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
 </a>
 
 
