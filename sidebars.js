@@ -5,14 +5,15 @@ module.exports = {
       'intro-citizenlab',
       'intro-documentation',
     ],
-    Tutorials: [
-      'tutorial-heroku',
-      'tutorial-dev-environment',
-      'tutorial-contribute-translations',
+    'Getting started': [
+      'start-dev-environment',
+      'start-deployment',
+      'start-configure-platform',
     ],
     Guides: [
       'guide-upgrading',
-      'guide-verification-plugin'
+      'guide-verification-plugin',
+      'guide-contribute-translations',
     ],
     Reference: [
       'reference-api-docs',

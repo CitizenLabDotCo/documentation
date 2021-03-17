@@ -1,5 +1,5 @@
 ---
-title: How to contribute translations
+title: Develpoment environment
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

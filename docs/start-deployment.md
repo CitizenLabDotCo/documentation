@@ -1,5 +1,5 @@
 ---
-title: Deploying to Heroku
+title: Deployment
 ---
 
 There are 2 ways to bring a CitizenLab platform online.

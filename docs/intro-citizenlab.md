@@ -1,5 +1,5 @@
 ---
-title: What is CitizenLab
+title: About CitizenLab
 ---
 
 Welcome
