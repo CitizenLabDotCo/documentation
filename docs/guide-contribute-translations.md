@@ -2,7 +2,8 @@
 title: Contributing translations
 ---
 
-<ul>The CitizenLab platform is currently available in the following languages:
+The CitizenLab platform is currently available in the following languages:
+<ul>
    <li>English</li>
    <li>Danish()</li>
    <li>Dutch</li>
@@ -18,13 +19,14 @@ title: Contributing translations
 
 () = only the public facing parts of the platform are available in this language. The administrative interface (where you manage and configure participation projects, etc.) has not been translated.
 
-<ol>You can contribute translations in three ways:
+You can contribute translations in three ways:
+<ol>
    <li> Translate the platform into additional languages </li>
    <li> Sign up as a proofreader to review and approve new translations </li>
    <li> Suggest improvements to existing copy and translations (typos, style, etc.) </li>
 </ol>
 
-Please contact julienne@citizenlab.co for either of the above.
+Please contact julienne@citizenlab.co if you would like to contribute.
 
 
 
