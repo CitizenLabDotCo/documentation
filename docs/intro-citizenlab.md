@@ -8,7 +8,7 @@ title: About CitizenLab
 alt="Video - Our mission at CitizenLab" width="560" height="315" border="10" /></a>
 
 ## Why we believe open-source is important?
-As a digital democracy platform, we work with hundreds of governments and organizations to make public decision-making more transparent and collaborative. Democracy belongs to all of us, and the algorithms shaping our institutions should be visible to everyone. By opening up our code, we are practicing what we preach and **strengthening community engagement by increasing transparency**.
+Democracy belongs to all of us, and the algorithms shaping our institutions should be visible to everyone. By opening up our code, we are practicing what we preach and **strengthening community engagement by increasing transparency**.
 
 As a company dedicated to making a positive social impact, we also prioritize purpose over profit. Being open-source means **we can continue to remove barriers to participation and give even more communities access to the platform**.
 
