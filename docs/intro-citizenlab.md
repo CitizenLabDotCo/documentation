@@ -7,10 +7,10 @@ title: About CitizenLab
 <a href="https://youtu.be/LRPvKS83ilA" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/60521419e42ae85cb25b1918_thumbnail%20mission%20video-p-2000.jpeg" 
 alt="Video - Our mission at CitizenLab" width="560" height="315" border="10" /></a>
 
-# Why is open-source important?
+## Why we believe open-source is important?
 As a digital democracy platform, we work with hundreds of governments and organizations to make public decision-making more transparent and collaborative. Democracy belongs to all of us, and the algorithms shaping our institutions should be visible to everyone. By opening up our code, we are practicing what we preach and **strengthening community engagement by increasing transparency**.
 
-‍As a company dedicated to making a positive social impact, we also prioritize purpose over profit. Being open-source means **we can continue to remove barriers to participation and give even more communities access to the platform**.
+As a company dedicated to making a positive social impact, we also prioritize purpose over profit. Being open-source means **we can continue to remove barriers to participation and give even more communities access to the platform**.
 
 <a href="https://youtu.be/bvtK_cVfkAY" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/6058c9adef957b1448f9eca0_Group%20340%20(1).png" 
 alt="Open-source at CitizenLab" width="560" height="315" border="10" /></a>
