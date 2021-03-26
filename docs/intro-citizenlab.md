@@ -6,3 +6,4 @@ title: About CitizenLab
 
 <a href="https://youtu.be/LRPvKS83ilA" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/60521419e42ae85cb25b1918_thumbnail%20mission%20video-p-2000.jpeg" 
 alt="Video - Our mission at CitizenLab" width="240" height="180" border="10" /></a>
+[alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
