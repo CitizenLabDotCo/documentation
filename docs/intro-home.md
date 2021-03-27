@@ -4,7 +4,7 @@ title: Development Portal
 slug: /
 ---
 
-CitizenLab is a citizen engagement platform to reach citizens, manage their ideas efficiently and make decisions based on real-time data.
+CitizenLab is a community engagement platform used by local governments & organizations to connect with residents & engage them in decision-making.
 
 CitizenLab is open-core, meaning that the basic version of the platform is open-source and free to use, modify and distribute for anyone.
 
