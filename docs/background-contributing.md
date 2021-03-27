@@ -4,7 +4,7 @@ title: Contributing
 We're happy that you're reading this! 
 We'd love this digital participation platform to be a place to which everyone can contribute.
 
-Do you need schanges to the current version of the platform to make it fit your specific needs or local context?
+Do you need changes to the current version of the platform to make it fit your specific needs or local context?
 You've come to the right place!
 
 # Code contributions
@@ -57,6 +57,6 @@ You can contribute translations in three ways:
 Please contact julienne@citizenlab.co if you would like to contribute.
 
 #Product ideas
-Do you have an idea for a feature to add to the product? Or do you have feedback on how to improve an existing feature? 
+Do you have an idea for a feature to add to the platform? Or do you have feedback on how to improve an existing feature? 
 Go to the [Discussions page](https://github.com/CitizenLabDotCo/citizenlab/discussions), and if there isn't a thread on it yet, start a new discussion within the 'Ideas' category.
 We keep track of what happens there, and will be happy to inform you about what can or will be done with your feedback. 
