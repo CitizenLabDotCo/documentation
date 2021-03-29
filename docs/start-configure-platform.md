@@ -30,4 +30,4 @@ You can also set up your platform so that participants can log in with either th
 5. Communicate with participants - send emails and add updates to keep everyone informed  
 
 ## Support
-You may find it helpful to reference the [support centre] (https://support.citizenlab.co) to guide you on the different functionalities.
+You may find it helpful to reference the [support centre](https://support.citizenlab.co) to guide you on the different functionalities.
