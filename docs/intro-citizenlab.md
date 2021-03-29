@@ -31,16 +31,19 @@ Below are the aspects on which the CitizenLab platform stands out compared to ot
 ### Why is open-source important to us?
 We made our platform open source because we are committed to further lowering the threshold to participation and to increasing transparency along the way. By making the core of our platform freely available, we hope to empower civic and public organisations with the tools needed to engage their community and make decision-making more participatory and inclusive.
 
+<a href="https://youtu.be/bvtK_cVfkAY" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/6058c9adef957b1448f9eca0_Group%20340%20(1).png" 
+alt="Open-source at CitizenLab" width="560" height="315" border="10" /></a>
+
 ### What are our future open-source plans?
 Sharing our code with the world is just a first step on CitizenLab’s “going open” roadmap. In the coming months, we will further enable you to use the software and build on top of it, by further documenting the code base and installing a plug-in development system. Once the plug-in system is in place, you will be able to develop 
 
 ##### Open-source roadmap
-✅ Make core functionalities open-source under AGPL (_Q1/21_)
-✅ Make our source code publicly available (_Q1/21_)
-❌ Make Workshops and NLP modules source-available (_Q2/21_)
-❌ Document our APIs to enable data integrations (_Q2/21_)
+✅ Make core functionalities open-source under AGPL (_Q1/21_) \
+✅ Make our source code publicly available (_Q1/21_)\
+❌ Make Workshops and NLP modules source-available (_Q2/21_)\
+❌ Document our APIs to enable data integrations (_Q2/21_)\
 ❌ Install and document the plug-in architecture (_Q3/21_)
-❌ Launch a directory of community plug-ins (_Q4/21_)
+❌ Launch a marketplace of community plug-ins (_Q4/21_)\
 
-<a href="https://youtu.be/bvtK_cVfkAY" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/6058c9adef957b1448f9eca0_Group%20340%20(1).png" 
-alt="Open-source at CitizenLab" width="560" height="315" border="10" /></a>
+### Get in touch
+We'd love to hear from you how you plan to use the CitizenLab platform, which questions you might have, or what you'd like to build on top of the platform. Reach out to us via hello@citizenlab.co. 
