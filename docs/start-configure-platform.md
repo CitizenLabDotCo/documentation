@@ -29,4 +29,5 @@ You can also set up your platform so that participants can log in with either th
 4. Manage your projects - respond to ideas, inputs and comments, and update project phases with new information
 5. Communicate with participants - send emails and add updates to keep everyone informed  
 
-If you’re setting up or finding your way around your CitizenLab platform, you may find it helpful to reference the [support centre] (https://support.citizenlab.co) to guide you on the different functionalities.
+## Support
+You may find it helpful to reference the [support centre] (https://support.citizenlab.co) to guide you on the different functionalities.
