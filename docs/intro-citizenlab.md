@@ -42,8 +42,8 @@ Sharing our code with the world is just a first step on CitizenLab’s “going 
 ✅ Make our source code publicly available (_Q1/21_)\
 ❌ Make Workshops and NLP modules source-available (_Q2/21_)\
 ❌ Document our APIs to enable data integrations (_Q2/21_)\
-❌ Install and document the plug-in architecture (_Q3/21_)
-❌ Launch a marketplace of community plug-ins (_Q4/21_)\
+❌ Install and document the plug-in architecture (_Q3/21_)\
+❌ Launch a marketplace of community plug-ins (_Q4/21_)
 
 ### Get in touch
 We'd love to hear from you how you plan to use the CitizenLab platform, which questions you might have, or what you'd like to build on top of the platform. Reach out to us via hello@citizenlab.co. 
