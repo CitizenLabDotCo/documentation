@@ -2,46 +2,75 @@
 title: Deployment
 ---
 
-There are 2 ways to bring a CitizenLab platform online.
+## Introduction
 
-# 1. Using Heroku
+This guide will help you with all you need to set-up and deploy CitizenLab.
 
-Heroku is a platform-as-a-service that makes it easy to deploy web application, without deeper understanding of the servers that are running it. If you have a basic understanding how of web applications work, you should be able to complete our guide and have your very own platform online by the end.
+## 1. Set-up a VPS
 
-Before we get started you need an Heroku account and have the Heroku CLI installed.
+[Digital Ocean](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
 
-Next, click this button to start the setup procedure
-<a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
-</a>
+## 2. Install docker
 
+[Official docs](https://docs.docker.com/engine/install/ubuntu/)
 
+[Digital Ocean docs](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
+```
+$ sudo apt-get update
 
-# 2. Using docker-compose
+$ sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
 
-If you know how to handle your own server, this guide is probably for you. This gives you more control
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-A CitizenLab platform needs 3 components to function, minmally:
-- A webserver serve the front-end
-- A docker container for the front-end to talk to
-- A postgresql database
+$ echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# 1. Server with docker compose
+$ sudo apt-get update
 
-# 2. Connecting your domain name with https
+$ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-# 3. Setting up the database
+$ docker --version
+```
 
-# 4. Environment variables
+## 3. Install docker-compose
 
-# 5. 3rd party services
+[Official docs](https://docs.docker.com/compose/install/)
 
-- Email
-- Image & file storage
-- Map provider
-- Storage
+[Digital Ocean docs](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
 
-There are some configuration values 
+```
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-# 6. Cron
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+```
+
+## 4. Clone the repository and set it up
+
+```
+$ sudo apt-get install -y git
+
+$ git clone https://github.com/CitizenLabDotCo/citizenlab-docker.git
+
+$ cd citizenlab-docker
+
+$ sh install.sh
+
+# this step may take a while since it will download all images needed to run the project
+$ docker-compose run --rm web rake db:create db:schema:load
+```
+
+## 5. Run it! :rocket:
+
+```
+$ docker-compose up --detach
+```
