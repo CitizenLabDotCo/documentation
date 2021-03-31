@@ -10,7 +10,7 @@ This guide will help you with all you need to set-up and deploy CitizenLab. Whil
 
 This guide was written for Ubuntu 20.04, a Digital Ocean tutorial to set it up can be found [here](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04).
 
-If you decide to run your database on the same server, as this guide assumes, we recommend a server with at least 4GB of RAM memory, which at the time of writing costed $20.00/month on Digital Ocean, please check their up-to-date [pricing page](https://www.digitalocean.com/pricing).
+If you decide to run your database on the same server, as this guide assumes, we recommend a server with at least 4GB of RAM memory.
 
 ## 2. Install docker
 
