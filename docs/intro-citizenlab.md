@@ -16,7 +16,9 @@ alt="Video - Our mission at CitizenLab" width="560" height="315" border="10" /><
 1. **Engage your community**: Collect new ideas, receive feedback on your plans, gather votes to gauge support, or host online discussions. All your projects on one platform.
 2. **Manage their contributions**: Seamlessly moderate all comments, process community input, and collaborate with your team to give feedback.
 3. **Decide based on insights**: Save time processing inputs and gain a granular understanding of citizens' needs, using the integrated insights tools.
-Have a look at our [Product Sheet](https://res.cloudinary.com/citizenlabco/image/upload/v1617005114/Product%20sheet/CitizenLab_-_Product_Sheet_compressed.pdf) if you like to learn more about the different functionalities, or try it out yourself via our demo platform.
+Have a look at our [Product Sheet](https://res.cloudinary.com/citizenlabco/image/upload/v1617005114/Product%20sheet/CitizenLab_-_Product_Sheet_compressed.pdf) if you like to learn more about the different functionalities.
+
+You can also try out our [demo platform](opensource.citizenlab.co)!
 
 ### Why should I use the CitizenLab platform?
 Below are the aspects on which the CitizenLab platform stands out compared to other online participation tools available. If you're looking for a platform to bundle all your engagement projects, with a focus on interactive discussions and voting, CitizenLab could be a great fit.
