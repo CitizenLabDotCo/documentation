@@ -38,8 +38,14 @@ $ sudo apt-get update
 
 $ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
+$ sudo usermod -aG docker ${USER}
+
 $ docker --version
 ```
+
+:::caution
+To apply the new group membership, log out of the server and back in, otherwise docker may not work properly.
+:::
 
 ## 3. Install docker-compose
 
