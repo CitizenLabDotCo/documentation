@@ -26,7 +26,9 @@ You can contribute translations in three ways:
    <li> Suggest improvements to existing copy and translations (typos, style, etc.) </li>
 </ol>
 
-Please contact julienne@citizenlab.co if you would like to contribute.
+We use CrowdIn to manage our translations and will open that up so translations and copy suggestions can be made there directly.
+
+Please contact julienne@citizenlab.co if you're interested in adding a language to the platform or would like to become a proofreader to approve suggested translations!
 
 
 
