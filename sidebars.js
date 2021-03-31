@@ -11,14 +11,14 @@ module.exports = {
       'start-configure-platform',
     ],
     Guides: [
-      'guide-upgrading',
-      'guide-verification-plugin',
+      // 'guide-upgrading',
+      // 'guide-verification-plugin',
       'guide-contribute-translations',
     ],
-    Reference: [
-      'reference-api-docs',
-      'reference-component-library',
-    ],
+    // Reference: [
+    //   'reference-api-docs',
+    //   'reference-component-library',
+    // ],
     Background: [
       'background-architecture',
       'background-commercial-features',
