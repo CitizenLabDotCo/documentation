@@ -59,7 +59,8 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 
 $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-docker-compose --version
+
+$ docker-compose --version
 ```
 
 ## 4. Clone the repository
