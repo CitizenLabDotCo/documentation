@@ -2,46 +2,139 @@
 title: Deployment
 ---
 
-There are 2 ways to bring a CitizenLab platform online.
+## Introduction
 
-# 1. Using Heroku
+This guide will help you with all you need to set-up and deploy CitizenLab. While having some experience with the command line and configuring servers will come in handy, but we'll try to guide you through it. 
 
-Heroku is a platform-as-a-service that makes it easy to deploy web application, without deeper understanding of the servers that are running it. If you have a basic understanding how of web applications work, you should be able to complete our guide and have your very own platform online by the end.
+## 1. Set-up a VPS
 
-Before we get started you need an Heroku account and have the Heroku CLI installed.
+[Digital Ocean](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
 
-Next, click this button to start the setup procedure
-<a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
-</a>
+If you decide to run your database on the same server, as this guide assumes, we recommend a server with at least 4GB of RAM memory.
 
+## 2. Install docker
 
+[Official docs](https://docs.docker.com/engine/install/ubuntu/)
 
+[Digital Ocean docs](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
-# 2. Using docker-compose
+```bash
+$ sudo apt-get update
 
-If you know how to handle your own server, this guide is probably for you. This gives you more control
+$ sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
 
-A CitizenLab platform needs 3 components to function, minmally:
-- A webserver serve the front-end
-- A docker container for the front-end to talk to
-- A postgresql database
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-# 1. Server with docker compose
+$ echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# 2. Connecting your domain name with https
+$ sudo apt-get update
 
-# 3. Setting up the database
+$ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
-# 4. Environment variables
+$ docker --version
+```
 
-# 5. 3rd party services
+## 3. Install docker-compose
 
-- Email
-- Image & file storage
-- Map provider
-- Storage
+[Official docs](https://docs.docker.com/compose/install/)
 
-There are some configuration values 
+[Digital Ocean docs](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04)
 
-# 6. Cron
+```bash
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+$ sudo chmod +x /usr/local/bin/docker-compose
+
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+```
+
+## 4. Clone the repository
+
+We've provided a [Github repository](https://github.com/CitizenLabDotCo/citizenlab-docker) with a minimal premade configuration to run the platform on a single server. 
+
+```bash
+$ sudo apt-get install -y git
+
+$ git clone https://github.com/CitizenLabDotCo/citizenlab-docker.git
+
+$ cd citizenlab-docker
+```
+
+## 5. Provide configuration values
+
+Before we can launch the application, we need to provide configuration values. You can choose some of these values yourself, but for some you will need to create external accounts. All configuration values need to be provided in the `.env` file.
+
+:::note
+You can edit the `.env` file straight on the server using a command line text editor. Nano is a good, easy to user one. Type `nano .env` to open it.
+:::
+
+### Secrets
+
+In order to provide the application with strong internal passwords for the database and user authentication, we have provided a script that generates them for you.
+
+```bash
+$ sh install.sh
+```
+### Admin user
+
+Provide the initial email, password, first and last name of the admin user. You can only set them here initially, once the application has started this no longer has an effect.
+
+### Domain name and DNS
+
+`CL_SETTINGS_HOST=` controls the domain name of your platform. To start off, you could just set it to the external IP address of your server and access it like that.
+
+To configure the proper domain name, you should change the setting and configure your DNS hosting provider to direct traffer towards the server. The docker-compose setup provides auto-provisioning https, by using Caddy as the webserver, so the connection will always be secure. Adding the A and AAAA DNS records for your domain name, towards your server, is enough to make it work.
+
+### Email
+
+The platform sends out email notification and has an email engine to send manual campaigns to user groups. For this to work, you need to provide the smtp server information.
+
+Here's an example for gmail, but any provider that supports SMTP works.
+```bash
+SMTP_ADDRESS=smtp.gmail.com
+SMTP_PORT=587
+# SMTP_DOMAIN=
+SMTP_USER_NAME=<gmail_username>,
+SMTP_PASSWORD=<gmail_password>
+SMTP_AUTHENTICATION=plain
+SMTP_ENABLE_STARTTLS_AUTO=true
+# SMTP_OPENSSL_VERIFY_MODE=
+```
+
+Alternatively, Mailgun is also supported, in which case you'll need to provide the API key and the domain.
+
+### Maps
+
+The CitizenLab platform displays maps in various places. The configuration allows you to specify the map center, expressed in latitude and longitude, and the map zoom level.
+
+You can also provide the tile provider, which defaults to open streetmap.
+
+Finally, in case you want to let people position their inputs on a map, you'll also need to provide a google maps API key. 
+
+### Other
+
+The `.env` file contains some additional variables to set up social logins, or integrate some extra services. Over time, more values will be added.
+
+## 6. Initialize the database
+
+Almost ready for action. When all configuration is provided, we're ready to setup the database. This step may take a while since it will download all images needed to run the project.
+
+```bash
+$ docker-compose run --rm web rake db:create db:migrate db:seed
+```
+If you get errors, it's likely that you didn't provide all configuration values in step 5.
+
+## 7. Run it! :rocket:
+
+```bash
+$ docker-compose up -d
+```
+It can take a few minutes before the platform starts to respond.
