@@ -162,16 +162,25 @@ GOOGLE_MAPS_API_KEY=my_google_maps_api_key
 
 The `.env` file contains some additional variables to set up social logins, or integrate some extra services. Over time, more values will be added.
 
-## 6. Initialize the database
+## 6. Pull images
 
-Almost ready for action. When all configuration is provided, we're ready to setup the database. This step may take a while since it will download all images needed to run the project.
+This step may take a while since it will download all images needed to run the project.
+
+[Official docs](https://docs.docker.com/compose/reference/pull/)
+```bash
+$ docker-compose pull
+```
+
+## 7. Initialize the database
+
+Almost ready for action. When all configuration is provided, we're ready to setup the database.
 
 ```bash
 $ docker-compose run --rm web rake db:create db:migrate db:seed
 ```
 If you get errors, it's likely that you didn't provide all configuration values in step 5.
 
-## 7. Run it! :rocket:
+## 8. Run it! :rocket:
 
 [Official docs](https://docs.docker.com/compose/reference/up/)
 ```bash
