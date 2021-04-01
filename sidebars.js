@@ -24,5 +24,8 @@ module.exports = {
       'background-commercial-features',
       'background-contributing'
     ],
+    Settings: [
+      'settings-timezones'
+    ],
   },
 };
