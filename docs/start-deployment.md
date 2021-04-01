@@ -114,6 +114,14 @@ To configure the proper domain name, you should change the setting and configure
 CL_SETTINGS_HOST=mywebsite.com # this could also be your external IP
 ```
 
+### Timezone
+
+Set the timezone for your application, a list of valid timezones can be found here.
+
+```bash
+CL_SETTINGS_CORE_TIMEZONE=Brussels
+```
+
 ### Email
 
 The platform sends out email notification and has an email engine to send manual campaigns to user groups. For this to work, you need to provide the smtp server information.
