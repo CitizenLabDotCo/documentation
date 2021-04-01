@@ -34,7 +34,6 @@ The previous command will run all application components in Docker, including fr
 If you rather run front locally on your machine instead of in Docker, use these commands instead.
 
 ```bash
-docker-compose build
 docker-compose run web rake db:create
 docker-compose run web rake db:reset
 docker-compose run --service-ports web
