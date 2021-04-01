@@ -116,7 +116,7 @@ CL_SETTINGS_HOST=mywebsite.com # this could also be your external IP
 
 ### Timezone
 
-Set the timezone for your application, a list of valid timezones can be found here.
+Set the timezone for your application, a list of valid timezones can be found [here](/settings-timezones).
 
 ```bash
 CL_SETTINGS_CORE_TIMEZONE=Brussels
