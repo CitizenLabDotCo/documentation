@@ -4,6 +4,7 @@ title: Contributing translations
 
 The CitizenLab platform is currently available in the following languages:
 <ul>
+   <li>Arabic</li>
    <li>English</li>
    <li>Danish()</li>
    <li>Dutch</li>
@@ -26,7 +27,7 @@ You can contribute translations in three ways:
    <li> Suggest improvements to existing copy and translations (typos, style, etc.) </li>
 </ol>
 
-We use CrowdIn to manage our translations and will open that up so translations and copy suggestions can be made there directly.
+We use [CrowdIn](https://crowdin.com/project/citizenlabdotcocitizenlab) to manage our translations. If you have typos or copy suggestions, you can make them there directly by selecting the language and joining the project. 
 
 Please contact julienne@citizenlab.co if you're interested in adding a language to the platform or would like to become a proofreader to approve suggested translations!
 
