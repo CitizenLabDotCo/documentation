@@ -18,7 +18,7 @@ alt="Video - Our mission at CitizenLab" width="560" height="315" border="10" /><
 3. **Decide based on insights**: Save time processing inputs and gain a granular understanding of citizens' needs, using the integrated insights tools.
 Have a look at our [Product Sheet](https://res.cloudinary.com/citizenlabco/image/upload/v1617005114/Product%20sheet/CitizenLab_-_Product_Sheet_compressed.pdf) if you like to learn more about the different functionalities.
 
-You can also try out our [demo platform](https://opensource.citizenlab.co)!
+You can also try out our [demo platform](https://opensource.demo.citizenlab.co)!
 
 ### Why should I use the CitizenLab platform?
 Below are the aspects on which the CitizenLab platform stands out compared to other online participation tools available. If you're looking for a platform to bundle all your engagement projects, with a focus on interactive discussions and voting, CitizenLab could be a great fit.
