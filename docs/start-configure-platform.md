@@ -29,7 +29,7 @@ You can also set up your platform so that participants can log in with either th
 4. Manage your projects - respond to ideas, inputs and comments, and update project phases with new information
 5. Communicate with participants - send emails and add updates to keep everyone informed  
 
-Want to test out the functionality yourself? A [demo platform](https://opensource.citizenlab.co) has been set up where you participate and view the admin interface.
+Want to test out the functionality yourself? A [demo platform](https://opensource.demo.citizenlab.co) has been set up where you participate and view the admin interface.
 
 ## Support
 You may find it helpful to reference the [support centre](https://support.citizenlab.co) to guide you on the different functionalities.
