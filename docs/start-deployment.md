@@ -184,7 +184,7 @@ $ docker-compose pull
 Almost ready for action. When all configuration is provided, we're ready to setup the database.
 
 ```bash
-$ docker-compose run --rm web rake db:create db:migrate db:seed
+$ docker-compose run --rm web rake db:setup
 ```
 If you get errors, it's likely that you didn't provide all configuration values in step 5.
 
