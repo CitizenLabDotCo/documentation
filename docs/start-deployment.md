@@ -105,14 +105,18 @@ INITIAL_ADMIN_LAST_NAME=Last
 
 ### Domain name and DNS
 
-`CL_SETTINGS_HOST=` controls the domain name of your platform. To start off, you could just set it to the external IP address of your server and access it like that.
+`CL_SETTINGS_HOST=` controls the domain name of your platform.
 
-To configure the proper domain name, you should change the setting and configure your DNS hosting provider to direct traffic towards the server. The docker-compose setup provides auto-provisioning https, by using Caddy as the webserver, so the connection will always be secure. Adding the A and AAAA DNS records for your domain name, towards your server, is enough to make it work.
+To configure the domain name, you should change the setting and configure your DNS hosting provider to direct traffic towards the server. The docker-compose setup provides auto-provisioning https, by using Caddy as the webserver, so the connection will always be secure. Adding the A and AAAA DNS records for your domain name, towards your server, is enough to make it work.
 
 ```bash
 # The address of the platform, without https://
-CL_SETTINGS_HOST=mywebsite.com # this could also be your external IP
+CL_SETTINGS_HOST=mywebsite.com
 ```
+
+:::note
+Caddy doesn't work with an IP address out of the box. If you provide an IP address for `CL_SETTINGS_HOST` instead of a domain name, your browser will error with ERR_SSL_PROTOCOL_ERROR or similar when visiting. To test whether the platform works before having a domain name configured, you can edit the `Caddyfile` and add `http://` in front of `{$CL_SETTINGS_HOST}`. Don't ever use http for a production platform though!
+:::
 
 ### Timezone
 
