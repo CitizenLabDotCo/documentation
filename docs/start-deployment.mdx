@@ -2,11 +2,11 @@
 title: Deployment
 ---
 
-export const DeploymentHelp = ({ step }) => {
+export const DeploymentHelp = ({ step, title }) => {
   return (
     <a
       style={{ fontSize: '0.5em', color: '#888888', marginLeft: '10px', fontWeight: 500 }}
-      href={`https://github.com/CitizenLabDotCo/citizenlab-docker/issues/new?template=deployment-guide-issue.md&labels=deployment+guide&title=Stuck+in+step+${step}:+<reason>`}
+      href={`https://github.com/CitizenLabDotCo/citizenlab-docker/issues/new?template=deployment-guide-issue.md&labels=deployment+guide&title=Stuck+in+step ${step} (${title}):+<reason>`}
     >
       🆘 help
     </a>
@@ -17,13 +17,13 @@ export const DeploymentHelp = ({ step }) => {
 
 This guide will help you with all you need to set-up and deploy CitizenLab. While having some experience with the command line and configuring servers will come in handy, but we'll try to guide you through it.
 
-## 1. Set-up a VPS <DeploymentHelp step={1} />
+## 1. Set-up a VPS <DeploymentHelp step={1} title="VPS" />
 
 This guide was written for Ubuntu 20.04, a Digital Ocean tutorial to set it up can be found [here](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04).
 
 If you decide to run your database on the same server, as this guide assumes, we recommend a server with at least 4GB of RAM memory.
 
-## 2. Install docker <DeploymentHelp step={2} />
+## 2. Install docker <DeploymentHelp step={2} title="Docker" />
 
 [Official docs](https://docs.docker.com/engine/install/ubuntu/)
 
@@ -58,7 +58,7 @@ $ docker --version
 To apply the new group membership, log out of the server and back in, otherwise docker may not work properly.
 :::
 
-## 3. Install docker-compose <DeploymentHelp step={3} />
+## 3. Install docker-compose <DeploymentHelp step={3} title="Docker-Compose" />
 
 [Official docs](https://docs.docker.com/compose/install/)
 
@@ -74,7 +74,7 @@ $ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 $ docker-compose --version
 ```
 
-## 4. Clone the repository <DeploymentHelp step={4} />
+## 4. Clone the repository <DeploymentHelp step={4} title="Clone" />
 
 We've provided a [Github repository](https://github.com/CitizenLabDotCo/citizenlab-docker) with a minimal premade configuration to run the platform on a single server.
 
@@ -86,7 +86,7 @@ $ git clone https://github.com/CitizenLabDotCo/citizenlab-docker.git
 $ cd citizenlab-docker
 ```
 
-## 5. Provide configuration values <DeploymentHelp step={5} />
+## 5. Provide configuration values <DeploymentHelp step={5} title="Configuration" />
 
 Before we can launch the application, we need to provide configuration values. You can choose some of these values yourself, but for some you will need to create external accounts. All configuration values need to be provided in the `.env` file.
 
@@ -94,14 +94,14 @@ Before we can launch the application, we need to provide configuration values. Y
 You can edit the `.env` file straight on the server using a command line text editor. Nano is a good, easy to user one. Type `nano .env` to open it.
 :::
 
-### 5.1 Secrets <DeploymentHelp step="5.1" />
+### 5.1 Secrets <DeploymentHelp step="5.1" title="Secrets" />
 
 In order to provide the application with strong internal passwords for the database and user authentication, we have provided a script that generates them for you.
 
 ```bash
 $ sh install.sh
 ```
-### 5.2 Admin user  <DeploymentHelp step="5.2" />
+### 5.2 Admin user <DeploymentHelp step="5.2" title="Admin user" />
 
 Provide the initial email, password, first and last name of the admin user. You can only set them here initially, once the application has started this no longer has an effect.
 
@@ -114,7 +114,7 @@ INITIAL_ADMIN_FIRST_NAME=First
 INITIAL_ADMIN_LAST_NAME=Last
 ```
 
-### 5.3 Domain name and DNS  <DeploymentHelp step="5.3" />
+### 5.3 Domain name and DNS  <DeploymentHelp step="5.3" title="Domain" />
 
 `CL_SETTINGS_HOST=` controls the domain name of your platform.
 
@@ -129,7 +129,7 @@ CL_SETTINGS_HOST=mywebsite.com
 Caddy doesn't work with an IP address out of the box. If you provide an IP address for `CL_SETTINGS_HOST` instead of a domain name, your browser will error with ERR_SSL_PROTOCOL_ERROR or similar when visiting. To test whether the platform works before having a domain name configured, you can edit the `Caddyfile` and add `http://` in front of `{$CL_SETTINGS_HOST}`. Don't ever use http for a production platform though!
 :::
 
-### 5.4 Timezone <DeploymentHelp step="5.4" />
+### 5.4 Timezone <DeploymentHelp step="5.4" title="Timezone" />
 
 Set the timezone for your application, a list of valid timezones can be found [here](/settings-timezones).
 
@@ -137,7 +137,7 @@ Set the timezone for your application, a list of valid timezones can be found [h
 CL_SETTINGS_CORE_TIMEZONE=Brussels
 ```
 
-### 5.5 Email <DeploymentHelp step="5.5" />
+### 5.5 Email <DeploymentHelp step="5.5" title="Email" />
 
 The platform sends out email notification and has an email engine to send manual campaigns to user groups. For this to work, you need to provide the smtp server information.
 
@@ -168,7 +168,7 @@ MAILGUN_DOMAIN=mydomain.com
 # MAILGUN_API_HOST=
 ```
 
-### 5.6 Maps  <DeploymentHelp step="5.6" />
+### 5.6 Maps  <DeploymentHelp step="5.6" title="Maps" />
 
 The CitizenLab platform displays maps in various places. The configuration allows you to specify the map center, expressed in latitude and longitude, and the map zoom level.
 
@@ -181,11 +181,11 @@ Finally, in case you want to let people position their inputs on a map, you'll a
 GOOGLE_MAPS_API_KEY=my_google_maps_api_key
 ```
 
-### 5.7 Other <DeploymentHelp step={5.7} />
+### 5.7 Other <DeploymentHelp step="5.7" title="Other configuration" />
 
 The `.env` file contains some additional variables to set up social logins, or integrate some extra services. Over time, more values will be added.
 
-## 6. Pull images  <DeploymentHelp step={6} />
+## 6. Pull images  <DeploymentHelp step={6} title="Docker images" />
 
 This step may take a while since it will download all images needed to run the project.
 
@@ -194,7 +194,7 @@ This step may take a while since it will download all images needed to run the p
 $ docker-compose pull
 ```
 
-## 7. Initialize the database <DeploymentHelp step={7} />
+## 7. Initialize the database <DeploymentHelp step={7} title="db:setup" />
 
 Almost ready for action. When all configuration is provided, we're ready to setup the database.
 
@@ -203,7 +203,7 @@ $ docker-compose run --rm web rake db:setup
 ```
 If you get errors, it's likely that you didn't provide all configuration values in step 5.
 
-## 8. Run it! :rocket:  <DeploymentHelp step={8} />
+## 8. Run it! :rocket:  <DeploymentHelp step={8} title="Running" />
 
 [Official docs](https://docs.docker.com/compose/reference/up/)
 ```bash
