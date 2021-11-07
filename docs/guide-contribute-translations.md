@@ -3,22 +3,26 @@ title: Contributing translations
 ---
 
 The CitizenLab platform is currently available in the following languages:
-<ul>
-   <li>Arabic</li>
-   <li>English</li>
-   <li>Danish()</li>
-   <li>Dutch</li>
-   <li>French</li>
-   <li>German()</li>
-   <li>Norwegian()</li>
-   <li>Polish</li>
-   <li>Portuguese</li>
-   <li>Romanian()</li>
-   <li>Spanish</li>
-</ul>
-   
 
-() = only the public facing parts of the platform are available in this language. The administrative interface (where you manage and configure participation projects, etc.) has not been translated.
+* Arabic
+* English
+* Danish
+* Dutch
+* French
+* German
+* Norwegian
+* Polish
+* Portuguese
+* Romanian
+* Spanish
+
+For these languages, only the publicly facing parts of the platform are translated, while the admin interface is in English:
+
+* Danish
+* German
+* Norwegian
+* Romanian
+
 
 You can contribute translations in three ways:
 <ol>
