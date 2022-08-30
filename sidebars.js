@@ -15,10 +15,10 @@ module.exports = {
       // 'guide-verification-plugin',
       'guide-contribute-translations',
     ],
-    // Reference: [
-    //   'reference-api-docs',
-    //   'reference-component-library',
-    // ],
+    Reference: [
+      'reference-api-docs',
+      // 'reference-component-library',
+    ],
     Background: [
       'background-architecture',
       'background-commercial-features',
