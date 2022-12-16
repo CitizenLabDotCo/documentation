@@ -4,7 +4,7 @@ title: Development environment
 
 ## Prerequisites
 
-You need docker, docker-compose, and node 12+.
+You need docker, docker-compose, and node 14+.
 
 ### 1. Clone the repository
 ```bash
@@ -14,14 +14,14 @@ git clone https://github.com/CitizenLabDotCo/citizenlab
 ### 2. Copy the provided example .env files
 
 ```bash
-cp .env-front.example .env-front
-cp .env-back.example .env-back
+cp env_files/back-secret.example.env env_files/back-secret.env
+cp env_files/front-secret.example.env env_files/front-secret.env
 ```
 Make modifications if required.
 
 ### 3. Build and launch
 
-Go to the root of the repository and start the back-end and services with :
+Go to the root of the repository and start the back-end and services
 ```bash
 docker-compose build
 docker-compose run web rake db:create
