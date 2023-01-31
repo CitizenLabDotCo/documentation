@@ -16,7 +16,7 @@ module.exports = {
     ],
     Reference: [
       'reference-api-docs',
-      // 'reference-component-library',
+      'reference-component-library',
     ],
     Background: [
       'background-architecture',

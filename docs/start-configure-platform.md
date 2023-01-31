@@ -6,7 +6,7 @@ Once you’ve set up your platform, you will be able to use the below functional
 
 ## Create projects to collect feedback and input
 
-You can choose from different modes of participation, including ideation, gathering input and feedback on specific topics, participatory budgeting (where people are given a budget and asked which projects they would spend that budget on), and conducting polls and surveys. The platform has a basic polling functionality, but if you’d like a more advanced survey you can embed a Google Form or a Typeform survey from your own account.
+You can choose from different modes of participation, including ideation, gathering input and feedback on specific topics, participatory budgeting (where people are given a budget and asked which projects they would spend that budget on), and conducting polls and surveys. The platform has a basic polling functionality or an advanced in-platform survey builder. If you’d like to use a different survey provider, it's also possible to embed Google Form, Typeform or others.
 
 You can set up a project as a stand-alone with a single participation method. Alternatively, you can set up a project that has multiple consecutivee phases (what we refer to as a timeline project), where each subsequent phase has a different participation method. For instance, you could create a project with four phases: Phase 1 to collect ideas, Phase 2 to ask people to vote on their top ideas, Phase 3 to conduct a survey and get specific feedback on idea implementation, and Phase 4 to let participants know the final outcome and next steps. To make this process easy, you can copy/move ideas and inputs between the phases through the admin interface. 
 
@@ -18,7 +18,7 @@ Proposals are a separate page on the platform where people can submit their own 
 
 ## User management 
 
-With the exception of taking embedded surveys, visitors need to register/log-in to take any actions on the platform (submitting an idea, voting, commenting, etc.). This helps to ensure legitimacy and accountability amongst the participants. Platform administrators can invite people to register on the platform, as well as send them emails from the platform. The ‘User’ tab in the admin interface also allows you to see and manage people who have registered on the platform.  
+With the exception of taking embedded surveys, visitors need to register/log-in to take any actions on the platform (submitting an idea, voting, commenting, etc.). This helps to ensure legitimacy and accountability amongst the participants. Platform administrators can invite people to register on the platform. The ‘User’ tab in the admin interface also allows you to see and manage people who have registered on the platform.  
 
 You can also set up your platform so that participants can log in with either their Facebook or Google credentials. 
 
