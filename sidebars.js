@@ -3,29 +3,22 @@ module.exports = {
     Introduction: [
       'intro-home',
       'intro-citizenlab',
-      'intro-documentation',
     ],
     'Getting started': [
       'start-dev-environment',
       'start-deployment',
       'start-configure-platform',
-    ],
-    Guides: [
-      // 'guide-upgrading',
-      // 'guide-verification-plugin',
-      'guide-contribute-translations',
+      'start-contribute-translations',
     ],
     Reference: [
       'reference-api-docs',
-      // 'reference-component-library',
+      'reference-component-library',
+      'reference-timezones'
     ],
     Background: [
       'background-architecture',
       'background-commercial-features',
       'background-contributing'
-    ],
-    Settings: [
-      'settings-timezones'
-    ],
+    ]
   },
 };
