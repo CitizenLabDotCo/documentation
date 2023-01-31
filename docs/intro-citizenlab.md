@@ -5,7 +5,7 @@ title: About CitizenLab
 [CitizenLab](https://www.citizenlab.co) is a **digital democracy platform that facilitates community participation and co-creation**. Participants can post ideas, contribute to discussion, or choose to vote and prioritize community projects. Whether it’s through a poll, a participatory budget, or idea collection, the CitizenLab platform offers multiple ways to make your community participatie. During the projects, you easily follow up on its progress and the input you receive. In the end, you can use the input from your community to shape your policies, increase legitimacy, and gain trust.
 
 ##### About CitizenLab
-CitizenLab, a social impact scale-up with its HQ in Brussels, aims to make public decision-making more participatory, inclusive, and responsive. The platform is already being used by over 275+ governments and organizations around the world to engage, consult, and deliberate with their community members. Since it was founded in 2015, CitizenLab gave +750,000 citizens a direct voice in public decision-making and got recognized as 'Best Social Impact Startup in Europe'.
+CitizenLab is a social impact scale-up with its HQ in Brussels. We aim to make public decision-making more participatory, inclusive, and responsive. 300+ governments and organizations around the world use CitizenLab to engage, consult, and deliberate with their community members. Since it was founded in 2015, CitizenLab gave 1M+ citizens a direct voice in public decision-making and got recognized as 'Best Social Impact Startup in Europe'.
 
 <a href="https://youtu.be/LRPvKS83ilA" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/60521419e42ae85cb25b1918_thumbnail%20mission%20video-p-2000.jpeg"
 alt="Video - Our mission at CitizenLab" width="560" height="315" border="10" /></a>
@@ -35,17 +35,6 @@ We made our platform open source because we are committed to further lowering th
 
 <a href="https://youtu.be/bvtK_cVfkAY" target="_blank"><img src="https://global-uploads.webflow.com/5a3bf6310252f900015dae82/6058c9adef957b1448f9eca0_Group%20340%20(1).png"
 alt="Open-source at CitizenLab" width="560" height="315" border="10" /></a>
-
-### What are our future open-source plans?
-Sharing our code with the world is just a first step on CitizenLab’s “going open” roadmap. In the coming months, we will further enable you to use the software and build on top of it, by further documenting the code base and installing a plug-in development system. Once the plug-in system is in place, you will be able to develop
-
-##### Open-source roadmap
-✅ Make core functionalities open-source under AGPL (_Q1/21_) \
-✅ Make our source code publicly available (_Q1/21_)\
-❌ Make Workshops and NLP modules source-available (_Q2/21_)\
-❌ Document our APIs to enable data integrations (_Q2/21_)\
-❌ Install and document the plug-in architecture (_Q3/21_)\
-❌ Launch a marketplace of community plug-ins (_Q4/21_)
 
 ### Get in touch
 We'd love to hear from you how you plan to use the CitizenLab platform, which questions you might have, or what you'd like to build on top of the platform. Reach out to us via hello@citizenlab.co.

@@ -3,7 +3,6 @@ module.exports = {
     Introduction: [
       'intro-home',
       'intro-citizenlab',
-      'intro-documentation',
     ],
     'Getting started': [
       'start-dev-environment',

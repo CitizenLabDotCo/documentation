@@ -7,8 +7,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'CititzenLab', // Usually your GitHub org/user name.
+  projectName: 'CitizenLab', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '',
@@ -24,7 +24,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/CitizenLabDotCo/citizenlab',
+          href: 'https://github.com/CitizenLabDotCo/citizenlab-oss',
           label: 'GitHub',
           position: 'right',
         },
@@ -55,7 +55,7 @@ module.exports = {
           items: [
             {
               label: 'Github discussions',
-              href: 'https://github.com/CitizenLabDotCo/citizenlab/discussions',
+              href: 'https://github.com/CitizenLabDotCo/citizenlab-oss/discussions',
             },
             {
               label: 'Twitter',
