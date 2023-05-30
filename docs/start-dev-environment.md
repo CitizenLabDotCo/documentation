@@ -40,6 +40,8 @@ docker-compose run web rake db:create
 docker-compose run web rake db:reset
 docker-compose up
 ```
+Note: some users may need to prepend `bundle exec` to the web container `rake` commands (e.g. `docker-compose run web bundle exec rake db:create`)
+
 Open a new terminal and start the front-end with :
 ```bash
 cd front
