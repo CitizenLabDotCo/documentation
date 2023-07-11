@@ -5,6 +5,9 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #073f80;
@@ -15,7 +18,7 @@
   --ifm-color-primary-lighter: #084893;
   --ifm-color-primary-lightest: #0952a6;
   --ifm-code-font-size: 95%;
-
+  --ifm-font-family-base: 'Public Sans';
 }
 
 [data-theme='dark'] {

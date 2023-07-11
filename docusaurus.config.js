@@ -100,12 +100,7 @@ module.exports = {
             // spec: '../citizenlab/back/doc/public_api/open_api.json',
             route: '/api/',
           },
-        ],
-        // Theme Options for modifying how redoc renders them
-        theme: {
-          // Change with your site colors
-          primaryColor: '#073f80',
-        },
+        ]
       },
     ],
   ],
