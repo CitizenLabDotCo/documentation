@@ -20,7 +20,13 @@ module.exports = {
         {
           to: '/',
           activeBasePath: '/',
-          label: 'Docs',
+          label: 'Guides',
+          position: 'left',
+        },
+        {
+          to: '/api',
+          activeBasePath: '/api',
+          label: 'API',
           position: 'left',
         },
         {
@@ -80,6 +86,23 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: '../citizenlab/back/doc/public_api/open_api.json',
+            route: '/api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
         },
       },
     ],
