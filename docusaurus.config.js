@@ -19,7 +19,7 @@ module.exports = {
       items: [
         {
           to: '/',
-          activeBasePath: '/',
+          activeBasePath: '/guides',
           label: 'Guides',
           position: 'left',
         },
@@ -95,14 +95,16 @@ module.exports = {
         // Plugin Options for loading OpenAPI files
         specs: [
           {
-            spec: '../citizenlab/back/doc/public_api/open_api.json',
+            spec: 'https://developers.citizenlab.co/api-docs/ee/public_api/master/open_api.json',
+            // Use this in development instead
+            // spec: '../citizenlab/back/doc/public_api/open_api.json',
             route: '/api/',
           },
         ],
         // Theme Options for modifying how redoc renders them
         theme: {
           // Change with your site colors
-          primaryColor: '#1890ff',
+          primaryColor: '#073f80',
         },
       },
     ],

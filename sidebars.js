@@ -1,24 +1,28 @@
 module.exports = {
   someSidebar: {
     Introduction: [
-      'intro-home',
-      'intro-citizenlab',
+      'guides/intro-home',
+      'guides/intro-citizenlab',
     ],
     'Getting started': [
-      'start-dev-environment',
-      'start-deployment',
-      'start-configure-platform',
-      'start-contribute-translations',
+      'guides/start-dev-environment',
+      'guides/start-deployment',
+      'guides/start-configure-platform',
+      'guides/start-contribute-translations',
     ],
     Reference: [
-      'reference-api-docs',
-      'reference-component-library',
-      'reference-timezones'
+      {
+        type: 'link',
+        label: 'API docs',
+        href: '/api'
+      },
+      'guides/reference-component-library',
+      'guides/reference-timezones'
     ],
     Background: [
-      'background-architecture',
-      'background-commercial-features',
-      'background-contributing'
+      'guides/background-architecture',
+      'guides/background-commercial-features',
+      'guides/background-contributing'
     ]
   },
 };
