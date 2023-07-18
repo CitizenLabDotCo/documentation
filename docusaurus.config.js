@@ -19,8 +19,14 @@ module.exports = {
       items: [
         {
           to: '/',
-          activeBasePath: '/',
-          label: 'Docs',
+          activeBasePath: '/guides',
+          label: 'Guides',
+          position: 'left',
+        },
+        {
+          to: '/api',
+          activeBasePath: '/api',
+          label: 'API',
           position: 'left',
         },
         {
@@ -81,6 +87,20 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: 'https://developers.citizenlab.co/api-docs/ee/public_api/master/open_api.json',
+            // Use this in development instead
+            // spec: '../citizenlab/back/doc/public_api/open_api.json',
+            route: '/api/',
+          },
+        ]
       },
     ],
   ],
