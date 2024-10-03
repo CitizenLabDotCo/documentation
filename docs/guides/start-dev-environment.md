@@ -6,14 +6,17 @@ Would you like to contribute a change? Or do you want to test out the platform l
 
 First, it's important that there are 2 versions of our product: An open-source and a commercial version. You're likely most interested in making changes to the open-source version, so that's what is covered by this guide.
 
-If you would like to contribute to our commercial version instead, the instructions are roughly the same, using our [main citizenlab repository](https://github.com/CitizenLabDotCo/citizenlab) instead.
+If you would like to contribute to our commercial version instead, the instructions are roughly the same, using our [main Go Vocal repository](https://github.com/CitizenLabDotCo/citizenlab) instead.
+
+Note: We changed our name from CitizenLab to GoVocal in June 2024 and are still in the process of updating the names of our Github repositories
+
 # January 2023 setup change
 
 In January 2023, we changed our repository structure. Before, we had one repository (called `citizenlab`) which contained both our open-source code and our proprietary commercial code.
 
 We decided to change the setup: We now have a dedicated open-source repository (`citizenlab-oss`), which is a fork of our main codebase (`citizenlab`), but only containing the 100% open-source code, fully licensed under AGPLv3.
 
-If you worked on CitizenLab before January 2023, it's a good idea to clone the new citizenlab-oss repository and not to continue on your earlier clone.
+If you worked on Go Vocal before January 2023, it's a good idea to clone the new citizenlab-oss repository and not to continue on your earlier clone.
 # Prerequisites
 
 You need docker, docker-compose, and node 14+.

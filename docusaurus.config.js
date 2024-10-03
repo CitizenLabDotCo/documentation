@@ -6,15 +6,15 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'CititzenLab', // Usually your GitHub org/user name.
-  projectName: 'CitizenLab', // Usually your repo name.
+  favicon: 'img/favicon.png',
+  organizationName: 'Go Vocal', // Usually your GitHub org/user name.
+  projectName: 'Go Vocal', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '',
       logo: {
-        alt: 'CitizenLab',
-        src: 'img/logo.png',
+        alt: 'Go Vocal',
+        src: 'img/logo.svg',
       },
       items: [
         {
@@ -43,12 +43,12 @@ module.exports = {
           title: 'Info',
           items: [
             {
-              label: 'CitizenLab',
-              to: 'https://www.citizenlab.co',
+              label: 'Go Vocal',
+              to: 'https://www.govocal.com',
             },
             {
               label: 'Blog',
-              to: 'https://www.citizenlab.co/blog',
+              to: 'https://www.govocal.com/blog',
             },
             {
               label: 'Development portal',
@@ -70,7 +70,7 @@ module.exports = {
           ],
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CitizenLab`,
+      copyright: `Copyright © ${new Date().getFullYear()} Go Vocal`,
     },
   },
   presets: [
