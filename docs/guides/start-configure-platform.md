@@ -32,4 +32,4 @@ You can also set up your platform so that participants can log in with either th
 Want to test out the functionality yourself? A [demo platform](https://opensource.demo.citizenlab.co) has been set up where you participate and view the admin interface.
 
 ## Support
-You may find it helpful to reference the [support centre](https://support.citizenlab.co) to guide you on the different functionalities.
+You may find it helpful to reference the [support centre](https://support.govocal.com) to guide you on the different functionalities.

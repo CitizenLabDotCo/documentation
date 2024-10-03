@@ -13,11 +13,8 @@ You can submit them as Pull Request, after which we will consider adding them to
 
 Do you want some feedback before submitting? Go to the [Discussions page](https://github.com/CitizenLabDotCo/citizenlab/discussions), and start a new discussion within the 'Show and tell' category. We will get back to you.
 
-## Testing
-_TO ADD: How to add tests for the new code_
-
 ## Submitting changes
-Please send a GitHub Pull Request to CitizenLab. 
+Please send a GitHub Pull Request to Go Vocal. 
 Split your work in 1 commit per feature that you've added or edited.
 Always write a clear log message for your commits that look like this:
 
@@ -25,36 +22,35 @@ Always write a clear log message for your commits that look like this:
 > 
 > A paragraph describing what changed and its impact."
 
-## Coding conventions
-_TO ADD: Our coding conventions_
-
 # Contributing translations
 
-The CitizenLab platform is currently available in the following languages:
-<ul>
-   <li>English</li>
-   <li>Danish()</li>
-   <li>Dutch</li>
-   <li>French</li>
-   <li>German()</li>
-   <li>Norwegian()</li>
-   <li>Polish</li>
-   <li>Portuguese</li>
-   <li>Romanian()</li>
-   <li>Spanish</li>
-</ul>
-   
+The Go Vocal platform is currently available in the following languages:
 
-() = only the public facing parts of the platform are available in this language. The administrative interface (where you manage and configure participation projects, etc.) has not been translated.
+* Arabic
+* English
+* Danish
+* Dutch
+* French
+* German
+* Norwegian
+* Polish
+* Portuguese
+* Romanian
+* Spanish
 
-You can contribute translations in three ways:
-<ol>
-   <li> Translate the platform into additional languages </li>
-   <li> Sign up as a proofreader to review and approve new translations </li>
-   <li> Suggest improvements to existing copy and translations (typos, style, etc.) </li>
-</ol>
+For these languages, only the publicly facing parts of the platform are translated, while the admin interface is in English:
 
-Please contact julienne@citizenlab.co if you would like to contribute.
+* Danish
+* German
+* Norwegian
+* Romanian
+
+You can contribute translations in two ways:
+* Translate the platform into additional languages
+* Suggest improvements to existing copy and translations (typos, style, etc.)
+
+We use [CrowdIn](https://crowdin.com/project/citizenlabdotcocitizenlab) to manage our translations. If you have typos or copy suggestions, you can make them there directly by selecting the language and joining the project. 
+Alternatively, please contact support@govocal.com if you would like to contribute.
 
 # Product ideas
 Do you have an idea for a feature to add to the platform? Or do you have feedback on how to improve an existing feature? 
