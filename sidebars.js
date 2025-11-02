@@ -16,6 +16,7 @@ module.exports = {
         label: 'API docs',
         href: '/api'
       },
+      'guides/reference-webhooks',
       'guides/reference-component-library',
       'guides/reference-timezones'
     ]
