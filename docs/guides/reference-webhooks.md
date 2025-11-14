@@ -44,12 +44,16 @@ To test your webhook endpoint:
 
 ## Supported Events
 
-| Event Type | Description | Triggered When |
-|------------|-------------|----------------|
-| `idea.created` | New idea submitted | A new idea is created |
-| `idea.published` | Idea published | An idea changes from draft to published |
-| `idea.changed` | Idea updated | An idea's title, body, or other attributes are modified |
-| `user.created` | New user registered | A new user account is created |
+| Event Type | Triggered When |
+|------------|----------------|
+| `idea.created` | A new idea, proposal or survey response is created |
+| `idea.published` | An idea, proposal or survey response changes from draft to published |
+| `idea.changed` | An idea, proposal or survey response's title, body, or other attributes are modified |
+| `idea.deleted` | An idea, proposal or survey response is permanently deleted |
+| `user.created` | A new user account is created |
+| `user.changed` | A user's profile, settings, or other attributes are modified |
+| `user.deleted` | A user account is permanently deleted |
+
 
 ## Webhook Payload
 
